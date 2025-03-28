@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using VacoBuilt.Data.Configurations;
+using VacoBuilt.Entities;
 
 namespace VacoBuilt.Data;
 
@@ -6,12 +8,15 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    public DbSet<Product> Products { get; set; }
-}
+    public DbSet<BlogPost> BlogPosts { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
-public class Product
-{
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public decimal Price { get; set; }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        // Apply configuration for Product
+        modelBuilder.ApplyConfiguration(new BlogPostConfiguration());
+        modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+    }
 }
