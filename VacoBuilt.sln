@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacoBuilt", "VacoBuilt\VacoBuilt.csproj", "{DD337745-7E66-4761-85AD-42441243DD88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD337745-7E66-4761-85AD-42441243DD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD337745-7E66-4761-85AD-42441243DD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD337745-7E66-4761-85AD-42441243DD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD337745-7E66-4761-85AD-42441243DD88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04E7E0FE-3509-49EF-886D-A6970256BDC9}
+	EndGlobalSection
+EndGlobal
